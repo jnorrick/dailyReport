@@ -97,7 +97,9 @@ print(display_forecast(forecast))
 print('*' * 50)
 print("Current Local Alerts:")
 final_local_alerts = display_local_alerts(local_zone)
-print(final_local_alerts)
+for line in final_local_alerts:
+    print(line)
+# print(final_local_alerts)
 print('*' * 50)
 print("Current State Alerts:")
 final_state_alerts = display_state_alerts(state_area)
@@ -107,8 +109,3 @@ print('*' * 50)
 print("Most Recent Pollen and Mold Report:")
 get_text_from_site(text)
 print('*' * 50)
-
-
-
-
-
